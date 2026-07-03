@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-pay, sans-serif;
+
+  --color-bg: #080808;
+  --color-surface: #111111;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-text: #f0efed;
+  --color-muted: #787774;
+  --color-accent: #c9a96e;
+  --color-accent-dim: rgba(201, 169, 110, 0.15);
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes ambient-drift {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(60px, -40px) scale(1.15); }
+}
+
+@keyframes fade-up {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-down {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
