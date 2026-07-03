@@ -129,5 +129,18 @@ export const perfumes = [
     caracteristica: 'Caramelo',
     imagen: 'artemus.jpeg',
   },
+    {
+    id: 10,
+    marca: 'Hawas',
+    nombre: 'Fire',
+    concentracion: 'EDP',
+    precioPerfume: null,
+    mlPerfume: null,
+    precioDecant: 8000,
+    mlDecant: 5,
+    estacion: 'verano',
+    caracteristica: 'Fresco, especiado, muy buena duracion',
+    imagen: `${this.marca.toLowerCase()}-${this.nombre.toLowerCase()}.jpeg`,
+  },
   
 ]
