@@ -140,7 +140,7 @@ export const perfumes = [
     mlDecant: 5,
     estacion: 'verano',
     caracteristica: 'Fresco, especiado, muy buena duracion',
-    imagen: `${this.marca.toLowerCase()}-${this.nombre.toLowerCase()}.jpeg`,
+    imagen: `hawas-fire.jpeg`,
   },
   
 ]
