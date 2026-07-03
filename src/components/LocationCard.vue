@@ -20,18 +20,21 @@ const { el, visible } = useScrollReveal()
       <p class="text-[10px] font-medium tracking-[0.3em] uppercase text-muted mb-2">
         Encuéntranos en
       </p>
+      <div class="w-full max-w-[220px] mx-auto mb-4 mt-2 rounded-[8px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+        <img src="/mapa-ubicacion.png" alt="Ubicación" class="w-full h-auto block rounded-[8px]" loading="lazy" />
+      </div>
       <h3 class="font-serif text-xl font-normal text-text mb-1">
-        Scent Bar Buenos Aires
+        Agape Jeans
       </h3>
       <p class="text-[13px] text-muted font-light tracking-wide">
-        Armenia 1740, Palermo<br/>
-        <a
-          href="https://maps.google.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-accent font-normal no-underline transition-opacity duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] hover:opacity-70"
-        >Ver en el mapa</a>
+        Presidencia Roque Sáenz Peña
       </p>
+      <a
+        href="https://maps.app.goo.gl/P73oLinNMGfH6ckA6"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block mt-3 text-[9px] font-semibold tracking-[0.2em] uppercase px-4 py-2 rounded-full border border-accent/30 bg-accent/10 text-accent transition-all duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] hover:bg-accent/20"
+      >Ver en el mapa</a>
     </div>
   </section>
 </template>
