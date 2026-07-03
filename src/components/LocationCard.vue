@@ -21,7 +21,7 @@ const { el, visible } = useScrollReveal()
         Encuéntranos en
       </p>
       <div class="w-full max-w-[220px] mx-auto mb-4 mt-2 rounded-[8px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
-        <img src="/mapa-ubicacion.png" alt="Ubicación" class="w-full h-auto block rounded-[8px]" loading="lazy" />
+        <img src="/negocio.jpg" alt="Ubicación" class="w-full h-auto block rounded-[8px]" loading="lazy" />
       </div>
       <h3 class="font-serif text-xl font-normal text-text mb-1">
         Agape Jeans
