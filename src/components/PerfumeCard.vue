@@ -62,6 +62,10 @@ const formatoPrecio = (n) => '$' + n.toLocaleString('es-AR')
           Decant
         </button>
       </div>
+      <div v-if="perfume.mujer === 1"
+        class="absolute top-3 right-3 text-[9px] font-semibold tracking-[0.2em] uppercase px-3 py-1 rounded-full border border-pink-400/30 bg-pink-400/10 text-pink-400">
+        Mujer
+      </div>
 
       <div class="w-full max-w-[220px] mx-auto mb-5 mt-5 rounded-[8px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
         <img :src="perfume.imagen" :alt="perfume.nombre" class="w-full h-auto block rounded-[8px]" loading="lazy" />
