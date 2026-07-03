@@ -38,7 +38,7 @@ const perfumesFiltrados = computed(() =>
         </div>
         <div class="mx-5 mb-2 py-3 px-4 rounded-full border border-amber-400/20 bg-amber-400/5 text-center">
           <p class="text-[10px] font-medium tracking-[0.15em] uppercase text-amber-400/90">
-            Llevando 5 decants obtené un 5% de descuento
+            Llevando 3 decants obtené un 5% de descuento
           </p>
         </div>
         <PerfumeCard
