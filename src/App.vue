@@ -6,6 +6,7 @@ import PerfumeCard from './components/PerfumeCard.vue'
 import LocationCard from './components/LocationCard.vue'
 import AppFooter from './components/AppFooter.vue'
 import { perfumes } from './data/perfumes.js'
+import { Analytics } from '@vercel/analytics/next';
 
 const marcas = [...new Set(perfumes.map(p => p.marca))]
 const selectedBrand = ref('todas')
@@ -50,5 +51,6 @@ const perfumesFiltrados = computed(() =>
       </main>
       <AppFooter />
     </div>
+    <Analytics />
   </div>
 </template>
