@@ -6,7 +6,7 @@ import PerfumeCard from './components/PerfumeCard.vue'
 import LocationCard from './components/LocationCard.vue'
 import AppFooter from './components/AppFooter.vue'
 import { perfumes } from './data/perfumes.js'
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from '@vercel/analytics/vue';
 
 const marcas = [...new Set(perfumes.map(p => p.marca))]
 const selectedBrand = ref('todas')
