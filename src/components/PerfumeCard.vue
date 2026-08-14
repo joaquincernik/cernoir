@@ -45,29 +45,29 @@ const formatoPrecio = (n) => '$' + n.toLocaleString('es-AR')
 </script>
 
 <template>
-  <section ref="el" class="px-5 py-6 will-change-transform"
+  <section ref="el" class="px-0 py-2 will-change-transform"
     :class="visible ? 'animate-[fade-up_1s_var(--ease-out)_0.7s_forwards]' : 'opacity-0 translate-y-6'">
     <div
-      class="relative bg-surface border border-border rounded-[16px] px-6 py-8 text-center shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition-transform duration-[0.4s] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-0.5">
+      class="relative bg-surface border border-border rounded-[16px] px-4 py-5 text-center shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition-transform duration-[0.4s] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-0.5">
 
       <div class="absolute top-3 left-3 flex gap-1">
         <button v-if="tienePerfume" @click="seleccion = 'perfume'"
-          class="text-[9px] font-semibold tracking-[0.2em] uppercase px-3 py-1 rounded-full border transition-all duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] cursor-pointer"
+          class="text-[8px] font-semibold tracking-[0.2em] uppercase px-2.5 py-1 rounded-full border transition-all duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] cursor-pointer"
           :class="seleccion === 'perfume' ? 'text-accent border-accent-dim bg-accent-dim' : 'text-muted border-transparent hover:text-accent/70'">
           Perfume
         </button>
         <button v-if="tieneDecant" @click="seleccion = 'decant'"
-          class="text-[9px] font-semibold tracking-[0.2em] uppercase px-3 py-1 rounded-full border transition-all duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] cursor-pointer"
+          class="text-[8px] font-semibold tracking-[0.2em] uppercase px-2.5 py-1 rounded-full border transition-all duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] cursor-pointer"
           :class="seleccion === 'decant' ? 'text-amber-400 border-amber-400/30 bg-amber-400/10' : 'text-muted border-transparent hover:text-amber-400/70'">
           Decant
         </button>
       </div>
       <div v-if="perfume.mujer === 1"
-        class="absolute top-3 right-3 text-[9px] font-semibold tracking-[0.2em] uppercase px-3 py-1 rounded-full border border-pink-400/30 bg-pink-400/10 text-pink-400">
+        class="absolute top-3 right-3 text-[8px] font-semibold tracking-[0.2em] uppercase px-2.5 py-1 rounded-full border border-pink-400/30 bg-pink-400/10 text-pink-400">
         Mujer
       </div>
 
-      <div class="w-full max-w-[220px] mx-auto mb-5 mt-5 rounded-[8px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+      <div class="w-full max-w-[170px] mx-auto mb-5 mt-5 rounded-[8px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
         <img :src="perfume.imagen" :alt="perfume.nombre" class="w-full h-auto block rounded-[8px]" loading="lazy" />
       </div>
 
@@ -75,7 +75,7 @@ const formatoPrecio = (n) => '$' + n.toLocaleString('es-AR')
         {{ perfume.marca }}
       </p>
 
-      <h2 class="font-serif text-[22px] font-normal tracking-wider text-text mb-1">
+      <h2 class="font-serif text-[17px] font-normal leading-snug tracking-wider text-text mb-1">
         {{ perfume.nombre }}
       </h2>
 
@@ -83,7 +83,7 @@ const formatoPrecio = (n) => '$' + n.toLocaleString('es-AR')
         {{ perfume.concentracion }}
       </p>
 
-      <p class="text-[12px] text-muted font-light italic leading-relaxed mb-3 max-w-[240px] mx-auto">
+      <p class="text-[12px] text-muted font-light italic leading-relaxed mb-3 max-w-[200px] mx-auto line-clamp-3">
         {{ perfume.descripcion }}
       </p>
 
@@ -102,7 +102,7 @@ const formatoPrecio = (n) => '$' + n.toLocaleString('es-AR')
 
       <div class="w-8 h-px bg-accent/50 mx-auto mb-4"></div>
 
-      <p class="font-serif text-[28px] font-normal tracking-wide transition-all duration-300 ease-[cubic-bezier(0.23,1,0.32,1)]"
+      <p class="font-serif text-[22px] font-normal tracking-wide transition-all duration-300 ease-[cubic-bezier(0.23,1,0.32,1)]"
         :class="seleccion === 'perfume' ? 'text-accent' : 'text-amber-400'">
         {{ formatoPrecio(precioActual) }}
         <small class="block font-sans text-xs font-light text-muted mt-1 tracking-wider">{{ mlActual }} ml</small>

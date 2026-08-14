@@ -42,11 +42,13 @@ const perfumesFiltrados = computed(() =>
             Llevando 3 decants obtené un 5% de descuento
           </p>
         </div>
-        <PerfumeCard
-          v-for="p in perfumesFiltrados"
-          :key="p.id + p.nombre"
-          :perfume="p"
-        />
+        <div class="grid grid-cols-2 gap-x-3 gap-y-4 px-3">
+          <PerfumeCard
+            v-for="p in perfumesFiltrados"
+            :key="p.id + p.nombre"
+            :perfume="p"
+          />
+        </div>
         <LocationCard />
       </main>
       <AppFooter />
